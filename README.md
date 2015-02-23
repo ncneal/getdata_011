@@ -10,13 +10,13 @@ assigns the file name to `destFile`
 `#set download url locations`
 assigns the URL for the zip file to be downloaded to `dataURL`
 
-`#download file`
+`#download file`  
 downloads the zip file
 
-`#unzip dataset download`
+`#unzip dataset download`  
 unzips the downloaded file to the working directory
 
-`#Open files`
+`#Open files`  
 reads all necessary text files into data frames
 * `x*` data frames are the variables
 * `y*` data frames are the activities
@@ -24,10 +24,10 @@ reads all necessary text files into data frames
 * `features` data frame containes variable names
 * `activity` data frame contatins the activity descriptions 
 
-`#add variable names to variables data sets`
+`#add variable names to variables data sets`  
 adds column names to the two `x*` data frames using the `features` data frame as names
 
-`#create list of variables we are interested in`
+`#create list of variables we are interested in`  
 create a list of variable names we want to use by filtering the features data frame
 
 ```
@@ -45,16 +45,16 @@ which data set they came from in case we want to split out once we combine the t
 * column bind `strain`, `ytrain`, `xtrain` and assign to `train` data frame
 * row bind the `test` and `train` data frames and assign to the `data` data frame
 
-`#add activity descriptions`
+`#add activity descriptions`  
 merge the `data` and `activity` data frames to add the `activityDesc` column and assing to `datafinal` data frame
 
-`#group and find mean of each variable and assing to new table`
+`#group and find mean of each variable and assing to new table`  
 Perform the following and assign to `groupavg` data frame:
 * select `datafinal` data frame excluding `dataset` and `activityId` columns
 * group by `activityDesc` and `subject`
 * summarize the remaining columns by mean
 
-`#output average table to 'subjectActivityAvg.txt'`
+`#output average table to 'subjectActivityAvg.txt'`  
 export the `groupavg` data frame to the directory in which the original data was contained
 
 
