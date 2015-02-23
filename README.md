@@ -69,7 +69,7 @@ where the string contains 'mean' OR 'std' to get only mean and standard deviatio
 
 * cols - the variable we assing this list to
 
-#### Select'xtest' and 'xtrain' data frames and add 'dataset' variable 
+#### Select 'xtest' and 'xtrain' data frames and add 'dataset' variable 
 Columns that are not contained in the 'cols' object are removed from 'xtest' and 'xtrain' data sets 
 and a varable is added to 'xtest' and 'xtrain' data sets so we know which data set the observation came from 
 when we combine them into one table.
