@@ -1,6 +1,7 @@
-# Code Book
+Code Book
+---------
 
-##Load libarary
+##Load library
 
 The 'dplyr' library is loaded for later use.
 
@@ -23,13 +24,13 @@ This data has several data files, all being space delimited text files. The file
 
 Test Group Data
 * test/X_test.txt - data containing 561 variables for the 'test' group
-** test/y_test.txt - the activity for each observatoin in the data contained in X_test.txt
-** test/subject_test.txt - the subject for each observation in the data contained in X_test.txt
+ * test/y_test.txt - the activity for each observatoin in the data contained in X_test.txt
+ * test/subject_test.txt - the subject for each observation in the data contained in X_test.txt
 
 Training Group Data
 * train/X_train.txt - data containing 561 variables for the 'training' group
-** test/y_train.txt - the activity for each observatoin in the data contained in X_train.txt
-** test/subject_train.txt - the subject for each observation in the data contained in X_train.txt
+ * test/y_train.txt - the activity for each observatoin in the data contained in X_train.txt
+ * test/subject_train.txt - the subject for each observation in the data contained in X_train.txt
 
 Variable Descriptions
 *activity_labels.txt - descriptions for the variables contained in y_test.txt and y_train.txt
@@ -43,18 +44,18 @@ Variable Descriptions
 Data is read from the data files above into data frames below and column names are added for a few files:
 
 * stest <- subject_test.txt
-** 'subject' column name is added to only column in file
+ * 'subject' column name is added to only column in file
 * xtest <- X_test.txt
 * ytest <- y_test.txt
-** 'activityId column is added to only column in file
+ * 'activityId column is added to only column in file
 * strain <- subject_train.txt
-** 'subject' column name is added to only column in file
+ * 'subject' column name is added to only column in file
 * xtest <- X_train.txt
 * ytest <- y_train.txt
-** 'activityId column is added to only column in file
+ * 'activityId column is added to only column in file
 * features <- features.txt
 * activity <- activity_labels.txt
-** 'activityId' column name is added to the first column
+ * 'activityId' column name is added to the first column
 ** 'activityDesc' column name is added to the second column
 
 ###Add variable names to variables data sets
