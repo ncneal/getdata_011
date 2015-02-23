@@ -30,8 +30,8 @@ Training Group Data
  * test/subject_train.txt - the subject for each observation in the data contained in X_train.txt
 
 Variable Descriptions
-*activity_labels.txt - descriptions for the variables contained in y_test.txt and y_train.txt
-*features.txt - descriptions for the variables contained in X_test.txt and X_train.txt
+* activity_labels.txt - descriptions for the variables contained in y_test.txt and y_train.txt
+* features.txt - descriptions for the variables contained in X_test.txt and X_train.txt
 
 
 Code
