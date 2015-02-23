@@ -1,9 +1,14 @@
-Packages used
+This script downloads the Human Activity Recognition Using Smartphones Data Set from the UCI Machine Learning Repository 
+and combines some of the data into a single data set which is grouped and summarized. The summarized data is exported for
+submission to the course project.
+
+
+### Packages used
 -------------
 The 'dplyr' library is loaded for later use.
 
 
-Data
+### Data
 ----
 The code downloads a zip file from the url below into the current working directory and un zips the files.
 
@@ -34,7 +39,7 @@ Variable Descriptions
 * features.txt - descriptions for the variables contained in X_test.txt and X_train.txt
 
 
-Code
+### Code
 ----
 #### Open files
 
