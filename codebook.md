@@ -7,7 +7,7 @@ loads the **dplyr** library
 `#set download file name`  
 assigns the file name to `destFile`
 
-`#set download url locations`
+`#set download url locations`  
 assigns the URL for the zip file to be downloaded to `dataURL`
 
 `#download file`  
