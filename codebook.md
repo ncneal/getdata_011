@@ -1,13 +1,13 @@
 Code Book
----------
+=========	
 
-##Load library
-
+Load library
+------------
 The 'dplyr' library is loaded for later use.
 
 
-## Data
-
+Data
+----
 The code downloads a zip file from the url below into the current working directory and un zips the files.
 
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
@@ -37,9 +37,9 @@ Variable Descriptions
 *features.txt - descriptions for the variables contained in X_test.txt and X_train.txt
 
 
-## Code
-
-###Open files
+Code
+----
+### Open files
 
 Data is read from the data files above into data frames below and column names are added for a few files:
 
@@ -58,10 +58,10 @@ Data is read from the data files above into data frames below and column names a
  * 'activityId' column name is added to the first column
 ** 'activityDesc' column name is added to the second column
 
-###Add variable names to variables data sets
+### Add variable names to variables data sets
 Column names are added to the 'xtest' and 'xtrain' data frames using the second column in the 'features' data frame.
 
-###Create list of variables we are interested in
+### Create list of variables we are interested in
 A list of variables we are interested are created using the 'features' data frame by filtering the second column 
 where the string contains 'mean' OR 'std' to get only mean and standard deviation variables.
 
@@ -75,20 +75,20 @@ when we combine them into one table.
 * dataset - column added to 'xtest' and 'xtrain'
 
 
-###Combine all data sets 
+### Combine all data sets 
 * 'xtest', 'ytest', and 'stest' are combined by a column bind and assigned to a new data frame 'test'
 * 'xtrain', 'ytrain', and 'strain' are combined by a column bind and assigned to a new data frame 'train'
 * the resulting data frames, 'test' and 'train' are combined and assigned to a new data frame 'data'
 
-###Add activity descriptions
+### Add activity descriptions
 Activity descriptions are added as a new column by merging the 'data' and 'activity' data frames and assigned to a 
 new data frame 'datafinal'
 
-###Group and summarize final data
+### Group and summarize final data
 All columns except the 'dataset' and 'activityId' columns are selected from the 'datafinal' data frame, resuling selection
 is grouped by the 'activityDesc' and 'subject' columns and the data is summarized by the mean of all the remaining columns
 and assigned assigned to a new data frame 'groupavg'
 
 
-###Output txt file
+### Output txt file
 The 'groupavg' data frame is exported as a space delimited text file into the same folder as our original data.
