@@ -1,10 +1,10 @@
 See an explanation of each part of the script below. The comments in the code correspond to the
 heading below and a further explanation is given for each.
 
-`#load necessary libraries`
+`#load necessary libraries`  
 loads the **dplyr** library
 
-`#set download file name`
+`#set download file name`  
 assigns the file name to `destFile`
 
 `#set download url locations`
